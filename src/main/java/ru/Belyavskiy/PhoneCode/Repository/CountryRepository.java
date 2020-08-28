@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface CountryRepository {
     List<Country> findByCountryStartsWith(String countryName);
+    Country getByName(String name);
 }
